@@ -7,8 +7,10 @@ As part of the Information Retrieval Course (BITS CS F469) we have built a lexic
 1. Download the repository
 2. Open the terminal/command prompt and cd to the downloaded repository
 3. Run the python script "testing.py"
+        
         """ python testing.py """
         NOTE: Use Python3
+
 4. The interactive command line would give you the further instructions
 5. On completion this will give you
         - Total number of word pairs
@@ -16,7 +18,9 @@ As part of the Information Retrieval Course (BITS CS F469) we have built a lexic
         - Jaccard coefficient
 
 
-## Improvement of IBM Model
+## Improvement on the IBM Model
 IBM Model would create a dictionary of all possible pairs of English and Dutch words. But this will consume a lot of space and time to compute. For reference traditional IBM model was creating 1,39,54,090 words pairs when trained on only 1000 lines but my optimised model creates only 1,10,15,619 even when trained on 1,00,000 lines.
+
+![Number of word pair comparison](https://github.com/MananAgarwal/Statistical-Machine-Translator/blob/master/Number_of_word_pairs.png)
 
 I am only considering those English-Dutch word pairs that occur in some sentence pair. This does not affect the accuracy of the model because the eliminated word pairs would have had a translation probability of 0 anyways.
